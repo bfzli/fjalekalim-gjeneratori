@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
-const FooterComponent = styled.footer`
+const Container = styled.footer`
   width: 100%;
-  height: 100vh;
-`
+  padding: var(--spacing-sm) var(--spacing);
+  border-bottom: 1px solid var(--border);
+`;
 
 export default function Footer() {
   return (
-    <FooterComponent>
+    <Container>
       Copyright 3000
-    </FooterComponent>
+    </Container>
   )
 }
