@@ -1,15 +1,11 @@
-import styled from 'styled-components'
-
-const Container = styled.footer`
-  width: 100%;
-  padding: var(--spacing-sm) var(--spacing);
-  border-bottom: 1px solid var(--border);
-`;
+import styles from '../constants/styles/Footer.module.scss';
 
 export default function Footer() {
   return (
-    <Container>
-      Copyright 3000
-    </Container>
-  )
+    <footer className={styles.container}>
+      <p>
+        {new Date().getFullYear()} &copy; Të gjitha të drejtat të rezervuara.
+      </p>
+    </footer>
+  );
 }
